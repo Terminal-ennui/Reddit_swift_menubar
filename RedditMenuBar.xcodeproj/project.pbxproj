@@ -1,0 +1,39 @@
+// !$*UTF8*$!
+{ archiveVersion = 1; classes = {}; objectVersion = 56; objects = {
+CB93BB037444F6C77B61E3C9 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+C8619A77AEE6B82D3F881C39 = { isa = PBXBuildFile; fileRef = CB93BB037444F6C77B61E3C9; };
+50E790F3525CDF76F5A2BFED = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+A9582CF7A945972C1A146FC4 = { isa = PBXBuildFile; fileRef = 50E790F3525CDF76F5A2BFED; };
+33EFD90BFB1637EC139D980F = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+831276D5236F820B80539C33 = { isa = PBXBuildFile; fileRef = 33EFD90BFB1637EC139D980F; };
+E44E616BAA86F8F20E606588 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+A5426575F5331328BEE6EC9F = { isa = PBXBuildFile; fileRef = E44E616BAA86F8F20E606588; };
+8880052B63163A47C4187F83 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditAPI.swift; sourceTree = "<group>"; };
+8DA7B88E414CE2EFB464B178 = { isa = PBXBuildFile; fileRef = 8880052B63163A47C4187F83; };
+D04F5D7A62073C4D6C681189 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+815313C8AE5B0F736D4AB7C2 = { isa = PBXBuildFile; fileRef = D04F5D7A62073C4D6C681189; };
+231379C1B835FD02B7CE2900 = { isa = PBXGroup; children = (CB93BB037444F6C77B61E3C9,50E790F3525CDF76F5A2BFED,33EFD90BFB1637EC139D980F,E44E616BAA86F8F20E606588,8880052B63163A47C4187F83,D04F5D7A62073C4D6C681189); path = RedditMenuBar; sourceTree = "<group>"; };
+1A2357F44C90F831F69070E1 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (C8619A77AEE6B82D3F881C39,A9582CF7A945972C1A146FC4,831276D5236F820B80539C33,A5426575F5331328BEE6EC9F,8DA7B88E414CE2EFB464B178,815313C8AE5B0F736D4AB7C2); runOnlyForDeploymentPostprocessing = 0; };
+FA67A7E9781EEA384E9B516A = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditMenuBarTests.swift; sourceTree = "<group>"; };
+751DCAEBEF9F3CE789334BD8 = { isa = PBXBuildFile; fileRef = FA67A7E9781EEA384E9B516A; };
+EC32B15E8FFD3A3E8E2D588A = { isa = PBXGroup; children = (FA67A7E9781EEA384E9B516A); path = RedditMenuBarTests; sourceTree = "<group>"; };
+1B64D5905A109F2B540C899A = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (751DCAEBEF9F3CE789334BD8); runOnlyForDeploymentPostprocessing = 0; };
+6D795F13C8C22E022040EE00 = { isa = PBXFileReference; explicitFileType = wrapper.application; path = RedditMenuBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+AEAE4B28CDFF08F590396BA5 = { isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = RedditMenuBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+FBDC4F23F93125BBEEAE800C = { isa = PBXGroup; children = (6D795F13C8C22E022040EE00,AEAE4B28CDFF08F590396BA5); name = Products; sourceTree = "<group>"; };
+B28B7AF69320201D1CF206EB = { isa = PBXGroup; children = (231379C1B835FD02B7CE2900,EC32B15E8FFD3A3E8E2D588A,FBDC4F23F93125BBEEAE800C); sourceTree = "<group>"; };
+89E1FD6268CC0F221A2BE178 = { isa = XCBuildConfiguration; buildSettings = { SDKROOT = macosx; MACOSX_DEPLOYMENT_TARGET = 14.0; SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; ENABLE_TESTABILITY = YES; }; name = Debug; };
+E6DE6C99132752C914FEF632 = { isa = XCBuildConfiguration; buildSettings = { SDKROOT = macosx; MACOSX_DEPLOYMENT_TARGET = 14.0; SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-O"; }; name = Release; };
+862894B703A6DEDF96A9DD6C = { isa = XCConfigurationList; buildConfigurations = (89E1FD6268CC0F221A2BE178,E6DE6C99132752C914FEF632); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+E9B2E96ABC5F6856F2BE79CF = { isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; PRODUCT_BUNDLE_IDENTIFIER = com.personal.RedditMenuBar; INFOPLIST_FILE = RedditMenuBar/Info.plist; CODE_SIGN_STYLE = Automatic; CODE_SIGN_IDENTITY = "-"; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; ENABLE_TESTABILITY = YES; }; name = Debug; };
+5A8C91857F674E16E2724F47 = { isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; PRODUCT_BUNDLE_IDENTIFIER = com.personal.RedditMenuBar; INFOPLIST_FILE = RedditMenuBar/Info.plist; CODE_SIGN_STYLE = Automatic; CODE_SIGN_IDENTITY = "-"; SWIFT_OPTIMIZATION_LEVEL = "-O"; }; name = Release; };
+F37922C48DA5978D02C9E50E = { isa = XCConfigurationList; buildConfigurations = (E9B2E96ABC5F6856F2BE79CF,5A8C91857F674E16E2724F47); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+FCB48D8F88BCDB0ED9FADFD7 = { isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; PRODUCT_BUNDLE_IDENTIFIER = com.personal.RedditMenuBarTests; GENERATE_INFOPLIST_FILE = YES; CODE_SIGN_IDENTITY = "-"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedditMenuBar.app/Contents/MacOS/RedditMenuBar"; BUNDLE_LOADER = "$(TEST_HOST)"; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; ENABLE_TESTABILITY = YES; }; name = Debug; };
+942EEBBACD6C88CAE7F29B29 = { isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; PRODUCT_BUNDLE_IDENTIFIER = com.personal.RedditMenuBarTests; GENERATE_INFOPLIST_FILE = YES; CODE_SIGN_IDENTITY = "-"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedditMenuBar.app/Contents/MacOS/RedditMenuBar"; BUNDLE_LOADER = "$(TEST_HOST)"; SWIFT_OPTIMIZATION_LEVEL = "-O"; }; name = Release; };
+BECB265224D91761C05FDA33 = { isa = XCConfigurationList; buildConfigurations = (FCB48D8F88BCDB0ED9FADFD7,942EEBBACD6C88CAE7F29B29); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+7D1043473D55BFA90E8530D3 = { isa = PBXNativeTarget; buildConfigurationList = F37922C48DA5978D02C9E50E; buildPhases = (1A2357F44C90F831F69070E1); buildRules = (); dependencies = (); name = RedditMenuBar; productName = RedditMenuBar; productReference = 6D795F13C8C22E022040EE00; productType = "com.apple.product-type.application"; };
+D799BAE6088A90139B415FCC = { isa = PBXContainerItemProxy; containerPortal = 98F54143AB4E86B28C3AFEE0; proxyType = 1; remoteGlobalIDString = 7D1043473D55BFA90E8530D3; remoteInfo = RedditMenuBar; };
+E9FAD0C6CD43534327C0AF90 = { isa = PBXTargetDependency; target = 7D1043473D55BFA90E8530D3; targetProxy = D799BAE6088A90139B415FCC; };
+A94A8FE5CCB19BA61C4C0873 = { isa = PBXNativeTarget; buildConfigurationList = BECB265224D91761C05FDA33; buildPhases = (1B64D5905A109F2B540C899A); buildRules = (); dependencies = (E9FAD0C6CD43534327C0AF90); name = RedditMenuBarTests; productName = RedditMenuBarTests; productReference = AEAE4B28CDFF08F590396BA5; productType = "com.apple.product-type.bundle.unit-test"; };
+98F54143AB4E86B28C3AFEE0 = { isa = PBXProject; attributes = { LastUpgradeCheck = 2700; }; buildConfigurationList = 862894B703A6DEDF96A9DD6C; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en,Base); mainGroup = B28B7AF69320201D1CF206EB; productRefGroup = FBDC4F23F93125BBEEAE800C; projectDirPath = ""; projectRoot = ""; targets = (7D1043473D55BFA90E8530D3,A94A8FE5CCB19BA61C4C0873); };
+}; rootObject = 98F54143AB4E86B28C3AFEE0; }
